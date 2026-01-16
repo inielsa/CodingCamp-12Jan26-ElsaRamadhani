@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url("../images/stack-of-books-by-popo2021.png");
+    background-size: cover;
+}
+
+nav a{
+    margin: 0 5px;
+}
