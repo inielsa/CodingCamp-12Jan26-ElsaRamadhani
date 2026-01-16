@@ -48,13 +48,38 @@ section{
     margin: 0px;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+}
+
+.column{
+    flex: 50%;
+}
+
 .profile-photo{
     height: 250px;
-    width: 250px;
+    max-width: 250px;
     background-color: lightgray;
     border-radius: 10%;
     background-image: url("../assets/cat-photo.jpg");
     background-size: cover;
+}
+
+.portfolio{
+    background-color: rgb(213, 225, 234);
+}
+
+.column img{
+    height: 150px;
+    max-width: 150px;
+    border-radius: 25%;
+}
+
+.card{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
 }
 
 footer{
@@ -62,4 +87,11 @@ footer{
     text-align: right;
     background-color: rgb(1, 73, 123);
     color: white;
+}
+
+@media only screen and (max-width:600px) {
+    .row{
+        display: block;
+    }
+    
 }

@@ -28,20 +28,59 @@
 
         <section class="profile" id="profile-page">
             <h2>Profile</h2>
-            <div class="profile-photo"></div>
-            <div class="profile-description">
-                <p>My name is Elsa Ramadhani, you can call me Elsa! (Despite the photo, I am not a cat)</p>
-                <p>I do things like programming, drawing, and writing. I love learning things, and I hope I can do good things with it!</p>
+            <div class="row">
+                <div class="column profile-photo"></div>
+                <div class="column profile-description">
+                    <p>My name is Elsa Ramadhani, you can call me Elsa!</p>
+                    <p>I do things like programming, drawing, and writing. I love learning about various things, and I hope I can do good things with all the skills I have!</p>
+                    <p>(It's not my real photo)</p>
+                </div>
             </div>
         </section>
 
         <section class="portfolio" id="portfolio page">
             <h2>Portfolio</h2>
+            <div class="row">
+                <a class="column card" href="#">
+                    <img src="assets/programming.jpg" alt="portfolio1">
+                    <h4>Programming</h4>
+                </a>
+                <a class="column card" href="#">
+                    <img src="assets/drawing.jpg" alt="portfolio2">
+                    <h4>Drawing</h4>
+                </a>
+                <a class="column card" href="#">
+                    <img src="assets/writing.jpg" alt="portfolio2">
+                    <h4>Writing</h4>
+                </a>
+            </div>
         </section>
 
         <section class="message" id="message-page">
             <h2>Message Us</h2>
-            
+            <form>
+                <div>
+                    <label for="username">Name:</label>
+                    <input id="username" name="username" type="text">
+                </div>
+                <div>
+                    <label for="bdate">Birth date:</label>
+                    <input id="bdate" name="bdate" type="date">
+                </div>
+                <div>
+                    <label for="">Gender:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label for="userMessage">Your message:</label>
+                    <textarea name="userMessage" id="userMessage"></textarea>
+                </div>
+                <button type="button" onclick="submitMessage()">Submit</button>
+                <p id="displayMessage"></p>
+            </form>
         </section>
     </main>
     
